@@ -63,3 +63,24 @@ if(c <= d) {  //criando uma informação
 console.log(res9) //mostrar resultado da 'res' no console
 
 console.clear()
+
+/* 
+
+        aula 3 (Operadores aritméticos e operadores de atribuição)
+[aritimetca]
+(+)adicão
+(-)subtração
+(*)multiplicação
+(/)divisão
+(**)potencia [exemplo 2 ** 2 = 2 elevado a 2]
+(%)resto [exemplo 10 % 4 4+4= 8 sobra 2, entao 10 % 4 = 2]
+
+[atribuição]
+(=)atribuir [exemplo: let ex = 13]
+(+=)atribir ela e ela mesma [exemplo: let ex = ex, vira let ex +=]
+(-=)subitrair ela por ela mesma [observação: se vc ja delarou a var apenas use o nome dela sel let ou var]
+(/=)dividir ela mesma
+(*=)multiplicar ela por ela mesma
+(**=)potencia ela por ela mesma
+(%=)calcular o resto dela mesma
+*/
