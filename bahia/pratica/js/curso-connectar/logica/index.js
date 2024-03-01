@@ -108,4 +108,29 @@ se eu usar a ! () assim '!(num1 > 3)' eu estou negando a condição ou tonando-a
 console.log(num4)
 console.clear()
 
+//aula 7 (operador de incremento/descremento e variaveis)
 
+let incremento = 0;
+
+incremento++ // almenta o valor da var e 1
+incremento++
+incremento-- // descrementar ou retirar 1
+
+//cronometro em js
+setInterval(() => {
+    incremento++
+    console.clear()
+    console.log()//<=== incremento
+}, 1000);
+
+/*
+variaveis:
+
+(var) so pode ser assesada de onde foi criada, poder mudar o valor
+(let) pode ser assesada em qualquer lugar, pode mudar o valor
+(const) so pode ser assesada de onde foi criada, nao muda o valor
+
+dica: se uma function esta em uma variavel ela so poder ser executada colocando seu nome e () na frente.
+*/
+
+console.log(incremento)
