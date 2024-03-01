@@ -84,3 +84,28 @@ console.clear()
 (**=)potencia ela por ela mesma
 (%=)calcular o resto dela mesma
 */
+
+//aula 4 operadores logicos
+
+let num1 = 5
+let num2 = 10
+let num3 = 0
+
+if(num1 > 3 && num2 > 8) { //se as duas condiçoes forem verdadeiras ao mesmo tempo 
+    num3 = 100  //este codigo sera executado
+}
+
+if(num1 < 3 || num2 > 8) { //se as uma das condiçoes forem verdadeiras
+    num4 = 200  //este codigo sera executado
+}
+
+/*
+se eu usar a ! () assim '!(num1 > 3)' eu estou negando a condição ou tonando-a falsa
+
+*/
+
+
+console.log(num4)
+console.clear()
+
+
