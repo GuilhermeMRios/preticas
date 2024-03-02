@@ -119,7 +119,6 @@ incremento-- // descrementar ou retirar 1
 //cronometro em js
 setInterval(() => {
     incremento++
-    console.clear()
     console.log()//<=== incremento
 }, 1000);
 
@@ -134,3 +133,32 @@ dica: se uma function esta em uma variavel ela so poder ser executada colocando 
 */
 
 console.log(incremento)
+console.clear()
+
+//aula 08 (estruturas de controle sequancial, condicional e de repetição)
+
+function verificaridade(idade) { 
+    if(idade >= 13) {
+        console.log('Pode acessar o site!')
+    } else if (idade === 12){  //usar else if faz com que vc use mais de 2 parametros
+        console.log('falta apenas 1 ano!')
+    } else {
+        console.log('Você não pode acessar este site!')
+    }
+}
+
+verificaridade(13)
+console.clear()
+
+let notas = [5, 8, 7, 9] //o [] serve para adicionar varios valores a mesma variavel
+let estudo = 1.3
+
+function escola() {
+    for(let i=0; i < notas.length; i++){
+        console.log(notas[0] * estudo); //multiplicar valores
+    }
+}
+
+escola()
+
+console.clear()
