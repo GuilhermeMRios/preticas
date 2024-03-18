@@ -1,0 +1,13 @@
+<div> 
+    <label>Qual sua idade?</label><br>
+    <input id="textinput" type="text" placeholder="Nome"> <!--input-->
+    <button onclick="envia()">Confirmar</button> <!--botao que iniciara a função-->
+</div>
+<script>
+
+function envia() { //função
+    var valor = document.getElementById('textinput').value; //a var valor vai ser igual a o value digitado no input
+    document.write('Seja bem vindo ' + valor) //mostrar o resultado na tela
+}
+
+</script>

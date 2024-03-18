@@ -162,3 +162,28 @@ function escola() {
 escola()
 
 console.clear()
+
+//-----------------
+//escrever na tela
+
+document.write('TEXTO')
+
+
+//pop UP
+
+alert('texto')
+confirm('TEXTO')
+
+console.clear()
+
+//para pegar o valor do input
+/*
+HTML=
+<!--<input id="textinput" type="text" placeholder="Nome"> //input
+  <button onclick="envia()">Confirmar</button> //botao que iniciara a função
+
+JavaScript=
+function envia() { //função
+    var valor = document.getElementById('textinput').value; //a var valor vai ser igual a o value digitado no input
+    document.write('Seja bem vindo ' + valor) //mostrar o resultado na tela
+} */

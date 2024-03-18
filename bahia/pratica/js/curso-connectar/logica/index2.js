@@ -19,4 +19,4 @@ function reajuste(salario) {
   console.clear()
   console.log(salario);
 }
-reajuste(2200);
+reajuste(1412);
