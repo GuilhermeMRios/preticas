@@ -177,7 +177,7 @@ confirm('TEXTO')
 console.clear()
 
 //para pegar o valor do input
-/*
+/
 HTML=
 <!--<input id="textinput" type="text" placeholder="Nome"> //input
   <button onclick="envia()">Confirmar</button> //botao que iniciara a função

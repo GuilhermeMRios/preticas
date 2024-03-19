@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reajuste salarial</title>
+    <style>
+
+body{
+    background-color: rgb(54, 54, 54);
+    font-family: Arial, Helvetica, sans-serif;
+    div{
+        text-align: center;
+    }
+    h1{
+        color: white;
+    }
+    h2{
+        color: white;
+    }
+    input{
+        background-color: black;
+        color: white;
+        width: 190px;
+        height: 40px;
+        border-radius: 60px;
+    }
+    button{
+        color: white;
+        background-color: black;
+        width: 100px;
+        height: 60px;
+        border-radius: 60px;
+        margin-top: 10px;
+    }
+    p{
+        font-size: large;
+        color: white;
+    }
+}
+
+    </style>
+</head>
+<body>
+   <div>
+    <h1>Reajuste salarial</h1>
+    <h2>Digite o valor abaixo</h2>
+    <input type="number" id="valor" placeholder="Salario"><br>
+    <button onclick="Reajuste()">Reajustar</button>
+    <p id="resultado">O novo salario e de 0 depois do reajuste</p>
+   </div>
+    <!--
+        1000 a 1500, 14%
+        1500 a 1700, 5%
+        1700, 2%
+
+    -->
+</body>
+</html>
+
+<script>
+
+
+function Reajuste(sal = document.getElementById('valor').value) {
+
+    if (sal => 1000 && sal < 1500) {
+        sal = sal * 1.14
+    }
+    if (sal =>1500 && sal < 1700) {
+        sal = sal * 1.05
+    }
+    if (sal => 1700) {
+        sal = sal * 1.02
+    }
+
+    document.getElementById('resultado').innerHTML='O novo salario e de ' + sal + ' depois do reajuste'
+}
+
+</script>
