@@ -27,8 +27,8 @@ body{
     button{
         color: white;
         background-color: black;
-        width: 100px;
-        height: 60px;
+        width: 40px;
+        height: 30px;
         border-radius: 60px;
         margin-top: 10px;
     }
@@ -45,7 +45,13 @@ body{
     <h1>Reajuste salarial</h1>
     <h2>Digite o valor abaixo</h2>
     <input type="number" id="valor" placeholder="Salario"><br>
-    <button onclick="Reajuste()">Reajustar</button>
+    <button onclick="one()">1%</button>
+    <button onclick="five()">5%</button>
+    <button onclick="ten()">10%</button>
+    <button onclick="fifteen()">15%</button>
+    <button onclick="twenty()">20%</button>
+
+    <button onclick="Reajuste()" style="display: none;">Reajustar</button>
     <p id="resultado">O novo salario e de 0 depois do reajuste</p>
    </div>
     <!--
@@ -59,9 +65,40 @@ body{
 
 <script>
 
+function one(sal = document.getElementById('valor').value) {
+    if (sal) {
+        sal = sal * 1.01
+    }
+    document.getElementById('resultado').innerHTML='O novo salario e de ' + sal + ' depois do reajuste'
+}
+function five(sal = document.getElementById('valor').value) {
+    if (sal) {
+        sal = sal * 1.05
+    }
+    document.getElementById('resultado').innerHTML='O novo salario e de ' + sal + ' depois do reajuste'
+}
+function ten(sal = document.getElementById('valor').value) {
+    if (sal) {
+        sal = sal * 1.10
+    }
+    document.getElementById('resultado').innerHTML='O novo salario e de ' + sal + ' depois do reajuste'
+}
+function fifteen(sal = document.getElementById('valor').value) {
+    if (sal) {
+        sal = sal * 1.15
+    }
+    document.getElementById('resultado').innerHTML='O novo salario e de ' + sal + ' depois do reajuste'
+}
+function twenty(sal = document.getElementById('valor').value) {
+   if (sal) {
+       sal = sal * 1.20
+   }   
+   document.getElementById('resultado').innerHTML='O novo salario e de ' + sal + ' depois do reajuste' 
+}
 
+
+/*
 function Reajuste(sal = document.getElementById('valor').value) {
-
     if (sal => 1000 && sal < 1500) {
         sal = sal * 1.14
     }
@@ -71,8 +108,6 @@ function Reajuste(sal = document.getElementById('valor').value) {
     if (sal => 1700) {
         sal = sal * 1.02
     }
-
     document.getElementById('resultado').innerHTML='O novo salario e de ' + sal + ' depois do reajuste'
-}
-
+}*/
 </script>
