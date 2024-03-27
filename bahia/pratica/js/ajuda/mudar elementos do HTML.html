@@ -1,11 +1,18 @@
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDC2bUU6r_993LQ7TVSyKgU8E6Rw4TCCl9A&usqp=CAU" id="logo" onclick="imagem()">
+
 <p id="txt">Olá como vai</p> <!--Texto que terra a cor mudada-->
 <button onclick="cor()">Mudar cor</button>  <!--Botao que executara a função-->
-
 <script>
-
+//mudar texto
 function cor() { //fução
     document.getElementById('txt').style="color:red"; //mudar cor do texto
     document.getElementById('txt').innerHTML='Saia daqui' //mudar texto
 }
+
+//mudar imagem ou video
+function imagem() {
+    document.getElementById('logo').src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKpLdSF7BIlkAl3S8_bczFssere1te9g6xGA&usqp=CAU"
+}
+
 
 </script>

@@ -187,3 +187,9 @@ function envia() { //função
     var valor = document.getElementById('textinput').value; //a var valor vai ser igual a o value digitado no input
     document.write('Seja bem vindo ' + valor) //mostrar o resultado na tela
 } */
+
+//função que e ativada assim que abrimos a pagina
+
+window.onload = function name(params) {
+    //função
+}
