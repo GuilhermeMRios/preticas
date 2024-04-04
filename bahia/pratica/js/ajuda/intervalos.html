@@ -1,0 +1,20 @@
+<div id="nome">Guilherme Monteiro</div>
+<input type="text" id="tempo" value="1">
+<script>
+    //fazer uma funçao com intervalo de tempo
+    setInterval(mudarnome, 5000)
+
+function mudarnome() {
+    document.getElementById('nome').innerHTML = "Alterado!"
+}
+//------------------------------------
+
+//Relogio (usando o intervalo de tempo)
+setInterval(relogio, 1000);
+
+function relogio(){
+    var tempo = document.getElementById( 'tempo' ).value;
+    var soma =  parseInt(tempo) + parseInt('1');
+    document.getElementById('tempo').value = soma;
+}
+</script>
