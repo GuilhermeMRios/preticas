@@ -1,0 +1,66 @@
+<style>
+    .zap {
+      position: fixed;
+      bottom: 15px;
+      left: 15px;
+    }
+  
+    .icone {
+      height: 60px;
+      cursor: pointer;
+    }
+  
+    #mensagem {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: white;
+      background-color: #27aa19;
+      padding: 15px;
+      border-radius: 23px;
+      position: fixed;
+      bottom: 80px;
+      left: 40px;
+      font-size: 20px;
+      display: none;
+    }
+    .ctt {
+      font-size: 30px;
+      margin-top: 0px;
+      margin-bottom: 13px;
+    }
+    .bloco{
+      background-image: linear-gradient(
+          red,
+          blue
+      );
+      margin-left: 0px;
+      width: 100%;
+      height: 1000px;
+    }
+  </style>
+  <body>
+      <div class="bloco">
+      </div>
+    <div class="zap" onclick="zap()">
+      <img src="R.png" class="icone" />
+    </div>
+    <div id="mensagem">
+      <h1 class="ctt">Contato:</h1>
+      Nome: Renan Guedes <br />
+      Telefone: (31) 99999-9999 <br />
+      Email: renan_guedes@hotmail.com
+    </div>
+  </body>
+  <script>
+    var visibility = false;
+    function zap() {
+      if (visibility) {
+        document.getElementById("mensagem").style.display = "none";
+        visibility = false;
+      } else {
+        document.getElementById("mensagem").style.display = "block";
+        visibility = true;
+      }
+    }
+  </script>
+  
